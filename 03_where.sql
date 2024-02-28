@@ -205,4 +205,4 @@ select
 from
 	tbl_category
 where
-	ref_category_code is not null;  
+	ref_category_code is not null;
