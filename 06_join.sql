@@ -85,3 +85,25 @@ select
 from
 	tbl_menu a
 cross join tbl_category b;
+
+-- self join
+-- 같은 테이블 내에서 행과 행 사이의 관계를 찾기 위해 사용되는 sql join 유형
+
+select
+	*
+from
+	tbl_category;
+    
+select
+	a.category_name,
+    b.category_name
+from
+	tbl_category a
+join tbl_category b on a.ref_category_code = b.category_code;
+
+-- select
+-- 	a.menu_name,
+-- 	b.menu_name
+-- from
+-- 	tbl_menu a
+-- join tbl_menu b on a.menu_code = b.menu_code;
